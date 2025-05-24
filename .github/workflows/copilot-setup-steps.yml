@@ -15,3 +15,7 @@ jobs:
     # If you do not check out your code, Copilot will do this for you.
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup .NET 9.0
+        uses: actions/setup-dotnet@3447fd6a9f9e57506b15f895c5b76d3b197dc7c2 # v3.2.0
+        with:
+          dotnet-version: '9.0.x'
