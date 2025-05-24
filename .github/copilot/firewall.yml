@@ -1,0 +1,15 @@
+allowlist:
+  domains:
+    - "azuresearch-usnc.nuget.org"
+    - "azuresearch-ussc.nuget.org"
+    - "crl3.digicert.com"
+    - "crl4.digicert.com"
+    - "ocsp.digicert.com"
+    - "s.symcb.com"
+    - "s.symcd.com"
+    - "ts-crl.ws.symantec.com"
+    - "ts-ocsp.ws.symantec.com"
+    - "www.microsoft.com"
+    - "api.nuget.org"
+    - "dotnetcli.blob.core.windows.net"
+    - "dotnetbuilds.azureedge.net"
