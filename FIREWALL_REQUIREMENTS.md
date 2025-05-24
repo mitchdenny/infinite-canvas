@@ -2,6 +2,10 @@
 
 This document provides information about the network connections required for the `dotnet new install Aspire.ProjectTemplates::9.3.0` command to function correctly. This information can be used to configure firewall rules appropriately.
 
+## Summary
+
+The `dotnet new install Aspire.ProjectTemplates::9.3.0` command attempts to download the Aspire project templates from NuGet package sources. By default, it uses api.nuget.org, but can be configured to use other sources through NuGet.config.
+
 ## Required Domains
 
 The following domains need to be accessible for the command to work properly:
@@ -50,6 +54,20 @@ To ensure the `dotnet new install Aspire.ProjectTemplates::9.3.0` command works 
 2. **HTTPS traffic (TCP port 443)** to all listed domains and their resolved IP addresses
 3. **HTTP traffic (TCP port 80)** may be needed for redirects, though most traffic will be HTTPS
 
+## Example NuGet.config
+
+A proper NuGet.config file is needed for the command to work. You can place this in the current directory or in your user profile:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <clear />
+    <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+  </packageSources>
+</configuration>
+```
+
 ## Testing Methodology
 
 This information was gathered by:
@@ -73,3 +91,5 @@ If the command fails with exit code 106 ("no NuGet feeds are configured or they 
 - The NuGet client uses HTTPS connections to securely download packages
 - Some environments may require a proxy server for external connections
 - For increased security, you can use a more restrictive approach by allowing only the specific IP addresses rather than entire domains, but this may require updates if IP addresses change
+- The scripts used to gather this information are included in this repository: `capture-dotnet-network.sh`, `capture-dotnet-network-detailed.sh`, and `capture-dotnet-network-strace.sh`
+- Full capture data is available in the `network-capture` directory
