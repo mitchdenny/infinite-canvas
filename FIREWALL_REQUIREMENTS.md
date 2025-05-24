@@ -6,6 +6,24 @@ This document provides information about the network connections required for th
 
 The `dotnet new install Aspire.ProjectTemplates::9.3.0` command attempts to download the Aspire project templates from NuGet package sources. By default, it uses api.nuget.org, but can be configured to use other sources through NuGet.config.
 
+## Command Variants
+
+The command can be executed in different ways, all requiring the same network access:
+
+```bash
+# Standard installation
+dotnet new install Aspire.ProjectTemplates::9.3.0
+
+# Force reinstallation of the template
+dotnet new install Aspire.ProjectTemplates::9.3.0 --force
+
+# With diagnostic output
+dotnet new install Aspire.ProjectTemplates::9.3.0 -d
+
+# Install from a specific NuGet source
+dotnet new install Aspire.ProjectTemplates::9.3.0 --nuget-source https://api.nuget.org/v3/index.json
+```
+
 ## Required Domains
 
 The following domains need to be accessible for the command to work properly:
@@ -53,6 +71,14 @@ To ensure the `dotnet new install Aspire.ProjectTemplates::9.3.0` command works 
 1. **DNS resolution** (typically UDP port 53) for all listed domains
 2. **HTTPS traffic (TCP port 443)** to all listed domains and their resolved IP addresses
 3. **HTTP traffic (TCP port 80)** may be needed for redirects, though most traffic will be HTTPS
+
+### Specific Port Requirements
+
+| Service | Protocol | Port | Direction | Purpose |
+|---------|----------|------|-----------|---------|
+| DNS | UDP | 53 | Outbound | Domain name resolution |
+| HTTP | TCP | 80 | Outbound | Redirects and fallbacks |
+| HTTPS | TCP | 443 | Outbound | Package downloads and API access |
 
 ## Example NuGet.config
 
