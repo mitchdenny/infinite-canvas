@@ -1,0 +1,24 @@
+Resolving api.nuget.org:
+nugetapiprod.trafficmanager.net.
+apiprod-mscdn.azureedge.net.
+apiprod-mscdn.afd.azureedge.net.
+azureedge-t-prod.trafficmanager.net.
+shed.dual-low.s-part-0013.t-0009.t-msedge.net.
+s-part-0013.t-0009.t-msedge.net.
+13.107.246.41
+api.nuget.org is an alias for nugetapiprod.trafficmanager.net.
+nugetapiprod.trafficmanager.net is an alias for apiprod-mscdn.azureedge.net.
+apiprod-mscdn.azureedge.net is an alias for apiprod-mscdn.afd.azureedge.net.
+apiprod-mscdn.afd.azureedge.net is an alias for azureedge-t-prod.trafficmanager.net.
+azureedge-t-prod.trafficmanager.net is an alias for shed.dual-low.s-part-0013.t-0009.t-msedge.net.
+shed.dual-low.s-part-0013.t-0009.t-msedge.net is an alias for s-part-0013.t-0009.t-msedge.net.
+s-part-0013.t-0009.t-msedge.net has address 13.107.246.41
+Host s-part-0013.t-0009.t-msedge.net not found: 5(REFUSED)
+Host s-part-0013.t-0009.t-msedge.net not found: 5(REFUSED)
+---
+Resolving nuget.org:
+52.159.113.5
+nuget.org has address 52.159.113.5
+Host nuget.org not found: 5(REFUSED)
+nuget.org mail is handled by 0 microsoft.mail.protection.outlook.com.
+---

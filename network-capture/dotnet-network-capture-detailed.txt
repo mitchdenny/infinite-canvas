@@ -1,0 +1,363 @@
+01:01:20.905986 eth0  Out IP (tos 0x0, ttl 64, id 53681, offset 0, flags [none], proto UDP (17), length 70)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.54796 > 168.63.129.16.domain: 28256+ [1au] A? api.nuget.org. (42)
+01:01:20.907797 eth0  In  IP (tos 0x0, ttl 128, id 26012, offset 0, flags [none], proto UDP (17), length 302)
+    168.63.129.16.domain > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.54796: 28256 7/0/1 api.nuget.org. CNAME nugetapiprod.trafficmanager.net., nugetapiprod.trafficmanager.net. CNAME apiprod-mscdn.azureedge.net., apiprod-mscdn.azureedge.net. CNAME apiprod-mscdn.afd.azureedge.net., apiprod-mscdn.afd.azureedge.net. CNAME azureedge-t-prod.trafficmanager.net., azureedge-t-prod.trafficmanager.net. CNAME shed.dual-low.s-part-0013.t-0009.t-msedge.net., shed.dual-low.s-part-0013.t-0009.t-msedge.net. CNAME s-part-0013.t-0009.t-msedge.net., s-part-0013.t-0009.t-msedge.net. A 13.107.246.41 (274)
+01:01:23.750355 eth0  Out IP (tos 0x0, ttl 64, id 31469, offset 0, flags [DF], proto TCP (6), length 343)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.57372 > 13.107.246.41.https: Flags [P.], cksum 0x0f69 (incorrect -> 0xbea0), seq 3563524348:3563524639, ack 3004914322, win 692, options [nop,nop,TS val 1649986401 ecr 4127164358], length 291
+01:01:23.782359 eth0  In  IP (tos 0x0, ttl 57, id 13129, offset 0, flags [DF], proto TCP (6), length 3396)
+    13.107.246.41.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.57372: Flags [P.], cksum 0x1b56 (incorrect -> 0x49ad), seq 1:3345, ack 291, win 83, options [nop,nop,TS val 4127171218 ecr 1649986401], length 3344
+01:01:23.782378 eth0  Out IP (tos 0x0, ttl 64, id 31470, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.57372 > 13.107.246.41.https: Flags [.], cksum 0x0e46 (incorrect -> 0xbc60), ack 3345, win 692, options [nop,nop,TS val 1649986433 ecr 4127171218], length 0
+01:01:24.276259 eth0  Out IP (tos 0x0, ttl 64, id 52749, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366 > 168.63.129.16.http: Flags [S], cksum 0x3409 (incorrect -> 0xedc5), seq 1075884983, win 64240, options [mss 1460,sackOK,TS val 1701584060 ecr 0,nop,wscale 7], length 0
+01:01:24.276540 eth0  In  IP (tos 0x0, ttl 128, id 26013, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366: Flags [S.], cksum 0xd079 (correct), seq 3025427771, ack 1075884984, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978831016 ecr 1701584060], length 0
+01:01:24.276574 eth0  Out IP (tos 0x0, ttl 64, id 52750, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0xfd50), ack 1, win 502, options [nop,nop,TS val 1701584060 ecr 1978831016], length 0
+01:01:24.276617 eth0  Out IP (tos 0x0, ttl 64, id 52751, offset 0, flags [DF], proto TCP (6), length 252)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366 > 168.63.129.16.http: Flags [P.], cksum 0x34c9 (incorrect -> 0x0cf2), seq 1:201, ack 1, win 502, options [nop,nop,TS val 1701584060 ecr 1978831016], length 200: HTTP, length: 200
+	GET /machine/?comp=goalstate HTTP/1.1
+	Host: 168.63.129.16
+	Accept-Encoding: identity
+	x-ms-agent-name: WALinuxAgent
+	x-ms-version: 2012-11-30
+	Connection: close
+	User-Agent: WALinuxAgent/2.13.1.1
+	
+01:01:24.278166 eth0  In  IP (tos 0x0, ttl 128, id 26014, offset 0, flags [DF], proto TCP (6), length 2440)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366: Flags [FP.], cksum 0x3d55 (incorrect -> 0xf035), seq 1:2389, ack 201, win 16387, options [nop,nop,TS val 1978831016 ecr 1701584060], length 2388: HTTP, length: 2388
+	HTTP/1.1 200 OK
+	Content-Type: text/xml; charset=utf-8
+	Server: Microsoft-IIS/10.0
+	Date: Sat, 24 May 2025 01:01:23 GMT
+	Connection: close
+	Content-Length: 2224
+	
+	<?xml version="1.0" encoding="utf-8"?>
+	<GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+	  <Version>2012-11-30</Version>
+	  <Incarnation>1</Incarnation>
+	  <Machine>
+	    <ExpectedState>Started</ExpectedState>
+	    <StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+	    <LBProbePorts>
+	      <Port>16001</Port>
+	    </LBProbePorts>
+	    <ExpectHealthReport>FALSE</ExpectHealthReport>
+	  </Machine>
+	  <Container>
+	    <ContainerId>53011767-77ae-4b65-b198-2f2f03dae266</ContainerId>
+	    <RoleInstanceList>
+	      <RoleInstance>
+	        <InstanceId>f50e4b26-82ca-4d1e-bb16-7167849ca85d._EUS2-GCUS1U24J110J51-0073</InstanceId>
+	        <State>Started</State>
+	        <Configuration>
+	          <HostingEnvironmentConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+	          <SharedConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+	          <ExtensionsConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+	          <FullConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+	          <Certificates>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=certificates&amp;incarnation=1</Certificates>
+	          <ConfigName>f50e4b26-82ca-4d1e-bb16-7167849ca85d.1.f50e4b26-82ca-4d1e-bb16-7167849ca85d.1._EUS2-GCUS1U24J110J51-0073.1.xml</ConfigName>
+	        </Configuration>
+	      </RoleInstance>
+	    </RoleInstanceList>
+	  </Container>
+	</GoalState> [|http]
+01:01:24.278190 eth0  Out IP (tos 0x0, ttl 64, id 52752, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0xf30d), ack 2390, win 538, options [nop,nop,TS val 1701584062 ecr 1978831016], length 0
+01:01:24.278417 eth0  Out IP (tos 0x0, ttl 64, id 52753, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366 > 168.63.129.16.http: Flags [F.], cksum 0x3401 (incorrect -> 0xf30c), seq 201, ack 2390, win 538, options [nop,nop,TS val 1701584062 ecr 1978831016], length 0
+01:01:24.278524 eth0  In  IP (tos 0x0, ttl 128, id 26016, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46366: Flags [.], cksum 0xb521 (correct), ack 202, win 16387, options [nop,nop,TS val 1978831018 ecr 1701584062], length 0
+01:01:24.279014 eth0  Out IP (tos 0x0, ttl 64, id 62347, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0xe225), seq 2112683598, win 64240, options [mss 1460,sackOK,TS val 1701584062 ecr 0,nop,wscale 7], length 0
+01:01:24.279245 eth0  In  IP (tos 0x0, ttl 128, id 26017, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514: Flags [S.], cksum 0x8bef (correct), seq 2005455598, ack 2112683599, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978831019 ecr 1701584062], length 0
+01:01:24.279261 eth0  Out IP (tos 0x0, ttl 64, id 62348, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0xb8c5), ack 1, win 502, options [nop,nop,TS val 1701584063 ecr 1978831019], length 0
+01:01:24.279282 eth0  Out IP (tos 0x0, ttl 64, id 62349, offset 0, flags [DF], proto TCP (6), length 507)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514 > 168.63.129.16.32526: Flags [P.], cksum 0x35c8 (incorrect -> 0x86f6), seq 1:456, ack 1, win 502, options [nop,nop,TS val 1701584063 ecr 1978831019], length 455
+01:01:24.282710 eth0  In  IP (tos 0x0, ttl 128, id 26018, offset 0, flags [DF], proto TCP (6), length 197)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514: Flags [FP.], cksum 0x7c16 (correct), seq 1:146, ack 456, win 16386, options [nop,nop,TS val 1978831022 ecr 1701584063], length 145
+01:01:24.282844 eth0  Out IP (tos 0x0, ttl 64, id 62350, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0xb666), seq 456, ack 147, win 501, options [nop,nop,TS val 1701584066 ecr 1978831022], length 0
+01:01:24.283019 eth0  In  IP (tos 0x0, ttl 128, id 26019, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47514: Flags [.], cksum 0x7858 (correct), ack 457, win 16386, options [nop,nop,TS val 1978831023 ecr 1701584066], length 0
+01:01:24.283515 eth0  Out IP (tos 0x0, ttl 64, id 55770, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0x73ce), seq 3268552621, win 64240, options [mss 1460,sackOK,TS val 1701584067 ecr 0,nop,wscale 7], length 0
+01:01:24.283719 eth0  In  IP (tos 0x0, ttl 128, id 26020, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528: Flags [S.], cksum 0x2697 (correct), seq 1718672131, ack 3268552622, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978831023 ecr 1701584067], length 0
+01:01:24.283745 eth0  Out IP (tos 0x0, ttl 64, id 55771, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0x536e), ack 1, win 502, options [nop,nop,TS val 1701584067 ecr 1978831023], length 0
+01:01:24.283763 eth0  Out IP (tos 0x0, ttl 64, id 55772, offset 0, flags [DF], proto TCP (6), length 454)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528 > 168.63.129.16.32526: Flags [P.], cksum 0x3593 (incorrect -> 0xe2c6), seq 1:403, ack 1, win 502, options [nop,nop,TS val 1701584067 ecr 1978831023], length 402
+01:01:24.283774 eth0  Out IP (tos 0x0, ttl 64, id 55773, offset 0, flags [DF], proto TCP (6), length 642)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528 > 168.63.129.16.32526: Flags [P.], cksum 0x364f (incorrect -> 0xe64e), seq 403:993, ack 1, win 502, options [nop,nop,TS val 1701584067 ecr 1978831023], length 590
+01:01:24.283870 eth0  In  IP (tos 0x0, ttl 128, id 26021, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528: Flags [.], cksum 0x1184 (correct), ack 993, win 16384, options [nop,nop,TS val 1978831023 ecr 1701584067], length 0
+01:01:24.284201 eth0  In  IP (tos 0x0, ttl 128, id 26022, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528: Flags [FP.], cksum 0x1a6c (correct), seq 1:155, ack 993, win 16384, options [nop,nop,TS val 1978831023 ecr 1701584067], length 154
+01:01:24.284474 eth0  Out IP (tos 0x0, ttl 64, id 13367, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0xf5e8), seq 4086265042, win 64240, options [mss 1460,sackOK,TS val 1701584068 ecr 0,nop,wscale 7], length 0
+01:01:24.284643 eth0  In  IP (tos 0x0, ttl 128, id 26023, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530: Flags [S.], cksum 0x95f5 (correct), seq 4003095956, ack 4086265043, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978831024 ecr 1701584068], length 0
+01:01:24.284654 eth0  Out IP (tos 0x0, ttl 64, id 13368, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0xc2cc), ack 1, win 502, options [nop,nop,TS val 1701584068 ecr 1978831024], length 0
+01:01:24.284673 eth0  Out IP (tos 0x0, ttl 64, id 13369, offset 0, flags [DF], proto TCP (6), length 455)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530 > 168.63.129.16.32526: Flags [P.], cksum 0x3594 (incorrect -> 0x1925), seq 1:404, ack 1, win 502, options [nop,nop,TS val 1701584068 ecr 1978831024], length 403
+01:01:24.284685 eth0  Out IP (tos 0x0, ttl 64, id 13370, offset 0, flags [DF], proto TCP (6), length 2711)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530 > 168.63.129.16.32526: Flags [P.], cksum 0x3e64 (incorrect -> 0x18d8), seq 404:3063, ack 1, win 502, options [nop,nop,TS val 1701584068 ecr 1978831024], length 2659
+01:01:24.284740 eth0  In  IP (tos 0x0, ttl 128, id 26024, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530: Flags [.], cksum 0x78c8 (correct), ack 3063, win 16388, options [nop,nop,TS val 1978831024 ecr 1701584068], length 0
+01:01:24.285272 eth0  In  IP (tos 0x0, ttl 128, id 26025, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530: Flags [FP.], cksum 0x81b0 (correct), seq 1:155, ack 3063, win 16388, options [nop,nop,TS val 1978831024 ecr 1701584068], length 154
+01:01:24.285391 eth0  Out IP (tos 0x0, ttl 64, id 55774, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0x4ef1), seq 993, ack 156, win 501, options [nop,nop,TS val 1701584069 ecr 1978831023], length 0
+01:01:24.285411 eth0  Out IP (tos 0x0, ttl 64, id 13372, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0xb63a), seq 3063, ack 156, win 501, options [nop,nop,TS val 1701584069 ecr 1978831024], length 0
+01:01:24.285508 eth0  In  IP (tos 0x0, ttl 128, id 26026, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47530: Flags [.], cksum 0x782a (correct), ack 3064, win 16388, options [nop,nop,TS val 1978831025 ecr 1701584069], length 0
+01:01:24.285553 eth0  In  IP (tos 0x0, ttl 128, id 26027, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47528: Flags [.], cksum 0x10e4 (correct), ack 994, win 16384, options [nop,nop,TS val 1978831025 ecr 1701584069], length 0
+01:01:30.286174 eth0  Out IP (tos 0x0, ttl 64, id 18125, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380 > 168.63.129.16.http: Flags [S], cksum 0x3409 (incorrect -> 0xe1ae), seq 4280478019, win 64240, options [mss 1460,sackOK,TS val 1701590070 ecr 0,nop,wscale 7], length 0
+01:01:30.286408 eth0  In  IP (tos 0x0, ttl 128, id 26028, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380: Flags [S.], cksum 0x6dbd (correct), seq 1253312007, ack 4280478020, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978837026 ecr 1701590070], length 0
+01:01:30.286441 eth0  Out IP (tos 0x0, ttl 64, id 18126, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0x9a94), ack 1, win 502, options [nop,nop,TS val 1701590070 ecr 1978837026], length 0
+01:01:30.286474 eth0  Out IP (tos 0x0, ttl 64, id 18127, offset 0, flags [DF], proto TCP (6), length 252)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380 > 168.63.129.16.http: Flags [P.], cksum 0x34c9 (incorrect -> 0xaa35), seq 1:201, ack 1, win 502, options [nop,nop,TS val 1701590070 ecr 1978837026], length 200: HTTP, length: 200
+	GET /machine/?comp=goalstate HTTP/1.1
+	Host: 168.63.129.16
+	Accept-Encoding: identity
+	x-ms-agent-name: WALinuxAgent
+	x-ms-version: 2012-11-30
+	Connection: close
+	User-Agent: WALinuxAgent/2.13.1.1
+	
+01:01:30.290029 eth0  In  IP (tos 0x0, ttl 128, id 26029, offset 0, flags [DF], proto TCP (6), length 2440)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380: Flags [FP.], cksum 0x3d55 (incorrect -> 0x8776), seq 1:2389, ack 201, win 16387, options [nop,nop,TS val 1978837029 ecr 1701590070], length 2388: HTTP, length: 2388
+	HTTP/1.1 200 OK
+	Content-Type: text/xml; charset=utf-8
+	Server: Microsoft-IIS/10.0
+	Date: Sat, 24 May 2025 01:01:29 GMT
+	Connection: close
+	Content-Length: 2224
+	
+	<?xml version="1.0" encoding="utf-8"?>
+	<GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+	  <Version>2012-11-30</Version>
+	  <Incarnation>1</Incarnation>
+	  <Machine>
+	    <ExpectedState>Started</ExpectedState>
+	    <StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+	    <LBProbePorts>
+	      <Port>16001</Port>
+	    </LBProbePorts>
+	    <ExpectHealthReport>FALSE</ExpectHealthReport>
+	  </Machine>
+	  <Container>
+	    <ContainerId>53011767-77ae-4b65-b198-2f2f03dae266</ContainerId>
+	    <RoleInstanceList>
+	      <RoleInstance>
+	        <InstanceId>f50e4b26-82ca-4d1e-bb16-7167849ca85d._EUS2-GCUS1U24J110J51-0073</InstanceId>
+	        <State>Started</State>
+	        <Configuration>
+	          <HostingEnvironmentConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+	          <SharedConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+	          <ExtensionsConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+	          <FullConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+	          <Certificates>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=certificates&amp;incarnation=1</Certificates>
+	          <ConfigName>f50e4b26-82ca-4d1e-bb16-7167849ca85d.1.f50e4b26-82ca-4d1e-bb16-7167849ca85d.1._EUS2-GCUS1U24J110J51-0073.1.xml</ConfigName>
+	        </Configuration>
+	      </RoleInstance>
+	    </RoleInstanceList>
+	  </Container>
+	</GoalState> [|http]
+01:01:30.290046 eth0  Out IP (tos 0x0, ttl 64, id 18128, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0x904c), ack 2390, win 538, options [nop,nop,TS val 1701590074 ecr 1978837029], length 0
+01:01:30.290280 eth0  Out IP (tos 0x0, ttl 64, id 18129, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380 > 168.63.129.16.http: Flags [F.], cksum 0x3401 (incorrect -> 0x904b), seq 201, ack 2390, win 538, options [nop,nop,TS val 1701590074 ecr 1978837029], length 0
+01:01:30.290437 eth0  In  IP (tos 0x0, ttl 128, id 26031, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.46380: Flags [.], cksum 0x5261 (correct), ack 202, win 16387, options [nop,nop,TS val 1978837030 ecr 1701590074], length 0
+01:01:30.291108 eth0  Out IP (tos 0x0, ttl 64, id 50130, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0x4c41), seq 3005433709, win 64240, options [mss 1460,sackOK,TS val 1701590075 ecr 0,nop,wscale 7], length 0
+01:01:30.291485 eth0  In  IP (tos 0x0, ttl 128, id 26032, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532: Flags [S.], cksum 0x580a (correct), seq 3081443664, ack 3005433710, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978837031 ecr 1701590075], length 0
+01:01:30.291502 eth0  Out IP (tos 0x0, ttl 64, id 50131, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0x84e1), ack 1, win 502, options [nop,nop,TS val 1701590075 ecr 1978837031], length 0
+01:01:30.291543 eth0  Out IP (tos 0x0, ttl 64, id 50132, offset 0, flags [DF], proto TCP (6), length 507)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532 > 168.63.129.16.32526: Flags [P.], cksum 0x35c8 (incorrect -> 0x475b), seq 1:456, ack 1, win 502, options [nop,nop,TS val 1701590075 ecr 1978837031], length 455
+01:01:30.295231 eth0  In  IP (tos 0x0, ttl 128, id 26033, offset 0, flags [DF], proto TCP (6), length 197)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532: Flags [FP.], cksum 0x482b (correct), seq 1:146, ack 456, win 16386, options [nop,nop,TS val 1978837035 ecr 1701590075], length 145
+01:01:30.295359 eth0  Out IP (tos 0x0, ttl 64, id 50133, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0x8280), seq 456, ack 147, win 501, options [nop,nop,TS val 1701590079 ecr 1978837035], length 0
+01:01:30.295478 eth0  In  IP (tos 0x0, ttl 128, id 26034, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47532: Flags [.], cksum 0x4473 (correct), ack 457, win 16386, options [nop,nop,TS val 1978837035 ecr 1701590079], length 0
+01:01:30.295907 eth0  Out IP (tos 0x0, ttl 64, id 50243, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0x2aed), seq 2030084824, win 64240, options [mss 1460,sackOK,TS val 1701590079 ecr 0,nop,wscale 7], length 0
+01:01:30.297119 eth0  In  IP (tos 0x0, ttl 128, id 26035, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540: Flags [S.], cksum 0xfda9 (correct), seq 1239728157, ack 2030084825, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978837037 ecr 1701590079], length 0
+01:01:30.297130 eth0  Out IP (tos 0x0, ttl 64, id 50244, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0x2a7f), ack 1, win 502, options [nop,nop,TS val 1701590081 ecr 1978837037], length 0
+01:01:30.297149 eth0  Out IP (tos 0x0, ttl 64, id 50245, offset 0, flags [DF], proto TCP (6), length 454)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540 > 168.63.129.16.32526: Flags [P.], cksum 0x3593 (incorrect -> 0xb9d7), seq 1:403, ack 1, win 502, options [nop,nop,TS val 1701590081 ecr 1978837037], length 402
+01:01:30.297160 eth0  Out IP (tos 0x0, ttl 64, id 50246, offset 0, flags [DF], proto TCP (6), length 642)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540 > 168.63.129.16.32526: Flags [P.], cksum 0x364f (incorrect -> 0xbc63), seq 403:993, ack 1, win 502, options [nop,nop,TS val 1701590081 ecr 1978837037], length 590
+01:01:30.297632 eth0  In  IP (tos 0x0, ttl 128, id 26036, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540: Flags [.], cksum 0xe894 (correct), ack 993, win 16384, options [nop,nop,TS val 1978837037 ecr 1701590081], length 0
+01:01:30.297933 eth0  In  IP (tos 0x0, ttl 128, id 26037, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540: Flags [FP.], cksum 0xf176 (correct), seq 1:155, ack 993, win 16384, options [nop,nop,TS val 1978837037 ecr 1701590081], length 154
+01:01:30.298205 eth0  Out IP (tos 0x0, ttl 64, id 41982, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0xae93), seq 422477559, win 64240, options [mss 1460,sackOK,TS val 1701590082 ecr 0,nop,wscale 7], length 0
+01:01:30.298489 eth0  In  IP (tos 0x0, ttl 128, id 26038, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550: Flags [S.], cksum 0xd3f3 (correct), seq 2109684126, ack 422477560, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978837038 ecr 1701590082], length 0
+01:01:30.298503 eth0  Out IP (tos 0x0, ttl 64, id 41983, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0x00cb), ack 1, win 502, options [nop,nop,TS val 1701590082 ecr 1978837038], length 0
+01:01:30.298522 eth0  Out IP (tos 0x0, ttl 64, id 41984, offset 0, flags [DF], proto TCP (6), length 455)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550 > 168.63.129.16.32526: Flags [P.], cksum 0x3594 (incorrect -> 0x5723), seq 1:404, ack 1, win 502, options [nop,nop,TS val 1701590082 ecr 1978837038], length 403
+01:01:30.298533 eth0  Out IP (tos 0x0, ttl 64, id 41985, offset 0, flags [DF], proto TCP (6), length 2711)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550 > 168.63.129.16.32526: Flags [P.], cksum 0x3e64 (incorrect -> 0x0dd7), seq 404:3063, ack 1, win 502, options [nop,nop,TS val 1701590082 ecr 1978837038], length 2659
+01:01:30.298764 eth0  In  IP (tos 0x0, ttl 128, id 26039, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550: Flags [.], cksum 0xb6c6 (correct), ack 3063, win 16388, options [nop,nop,TS val 1978837038 ecr 1701590082], length 0
+01:01:30.299267 eth0  In  IP (tos 0x0, ttl 128, id 26040, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550: Flags [FP.], cksum 0xbfa8 (correct), seq 1:155, ack 3063, win 16388, options [nop,nop,TS val 1978837038 ecr 1701590082], length 154
+01:01:30.299374 eth0  Out IP (tos 0x0, ttl 64, id 50247, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0x2602), seq 993, ack 156, win 501, options [nop,nop,TS val 1701590083 ecr 1978837037], length 0
+01:01:30.299392 eth0  Out IP (tos 0x0, ttl 64, id 41987, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0xf438), seq 3063, ack 156, win 501, options [nop,nop,TS val 1701590083 ecr 1978837038], length 0
+01:01:30.299547 eth0  In  IP (tos 0x0, ttl 128, id 26041, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47540: Flags [.], cksum 0xe7f4 (correct), ack 994, win 16384, options [nop,nop,TS val 1978837039 ecr 1701590083], length 0
+01:01:30.299549 eth0  In  IP (tos 0x0, ttl 128, id 26042, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.47550: Flags [.], cksum 0xb628 (correct), ack 3064, win 16388, options [nop,nop,TS val 1978837039 ecr 1701590083], length 0
+01:01:35.135516 eth0  In  IP (tos 0x0, ttl 46, id 32411, offset 0, flags [DF], proto TCP (6), length 548)
+    20.221.96.90.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.37748: Flags [P.], cksum 0xd5f6 (correct), seq 2196223642:2196224138, ack 1015603533, win 750, options [nop,nop,TS val 693558328 ecr 2012450582], length 496
+01:01:35.136617 eth0  Out IP (tos 0x0, ttl 64, id 28555, offset 0, flags [DF], proto TCP (6), length 995)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.37748 > 20.221.96.90.https: Flags [P.], cksum 0x8397 (incorrect -> 0x2aa7), seq 1:944, ack 496, win 706, options [nop,nop,TS val 2012500614 ecr 693558328], length 943
+01:01:35.169677 eth0  In  IP (tos 0x0, ttl 46, id 32412, offset 0, flags [DF], proto TCP (6), length 52)
+    20.221.96.90.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.37748: Flags [.], cksum 0x31a4 (correct), ack 944, win 773, options [nop,nop,TS val 693558362 ecr 2012500614], length 0
+01:01:35.274717 eth0  In  IP (tos 0x0, ttl 52, id 63180, offset 0, flags [DF], proto TCP (6), length 262)
+    20.85.130.105.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.59128: Flags [P.], cksum 0x9312 (correct), seq 317350541:317350751, ack 1189344219, win 94, options [nop,nop,TS val 1545758073 ecr 4162958367], length 210
+01:01:35.275614 eth0  Out IP (tos 0x0, ttl 64, id 19242, offset 0, flags [DF], proto TCP (6), length 2312)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.59128 > 20.85.130.105.https: Flags [P.], cksum 0xaa43 (incorrect -> 0xb0d5), seq 1:2261, ack 210, win 713, options [nop,nop,TS val 4163008472 ecr 1545758073], length 2260
+01:01:35.280794 eth0  In  IP (tos 0x0, ttl 52, id 63181, offset 0, flags [DF], proto TCP (6), length 52)
+    20.85.130.105.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.59128: Flags [.], cksum 0x00e5 (correct), ack 2261, win 98, options [nop,nop,TS val 1545758079 ecr 4163008472], length 0
+01:01:35.930054 eth0  Out IP (tos 0x0, ttl 64, id 44506, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.51992 > 140.82.112.21.https: Flags [.], cksum 0x0719 (incorrect -> 0x5b2a), ack 1113708756, win 1220, options [nop,nop,TS val 4029634256 ecr 2328541860], length 0
+01:01:35.935784 eth0  In  IP (tos 0x0, ttl 48, id 23395, offset 0, flags [DF], proto TCP (6), length 52)
+    140.82.112.21.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.51992: Flags [.], cksum 0x5ef8 (correct), ack 1, win 240, options [nop,nop,TS val 2328556922 ecr 4029619199], length 0
+01:01:36.300117 eth0  Out IP (tos 0x0, ttl 64, id 405, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648 > 168.63.129.16.http: Flags [S], cksum 0x3409 (incorrect -> 0xc1d3), seq 1651872042, win 64240, options [mss 1460,sackOK,TS val 1701596084 ecr 0,nop,wscale 7], length 0
+01:01:36.300443 eth0  In  IP (tos 0x0, ttl 128, id 26043, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648: Flags [S.], cksum 0x46e7 (correct), seq 568532565, ack 1651872043, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978843040 ecr 1701596084], length 0
+01:01:36.300471 eth0  Out IP (tos 0x0, ttl 64, id 406, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0x73be), ack 1, win 502, options [nop,nop,TS val 1701596084 ecr 1978843040], length 0
+01:01:36.300524 eth0  Out IP (tos 0x0, ttl 64, id 407, offset 0, flags [DF], proto TCP (6), length 252)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648 > 168.63.129.16.http: Flags [P.], cksum 0x34c9 (incorrect -> 0x835f), seq 1:201, ack 1, win 502, options [nop,nop,TS val 1701596084 ecr 1978843040], length 200: HTTP, length: 200
+	GET /machine/?comp=goalstate HTTP/1.1
+	Host: 168.63.129.16
+	Accept-Encoding: identity
+	x-ms-agent-name: WALinuxAgent
+	x-ms-version: 2012-11-30
+	Connection: close
+	User-Agent: WALinuxAgent/2.13.1.1
+	
+01:01:36.301969 eth0  In  IP (tos 0x0, ttl 128, id 26044, offset 0, flags [DF], proto TCP (6), length 2440)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648: Flags [FP.], cksum 0x3d55 (incorrect -> 0x63a1), seq 1:2389, ack 201, win 16387, options [nop,nop,TS val 1978843041 ecr 1701596084], length 2388: HTTP, length: 2388
+	HTTP/1.1 200 OK
+	Content-Type: text/xml; charset=utf-8
+	Server: Microsoft-IIS/10.0
+	Date: Sat, 24 May 2025 01:01:36 GMT
+	Connection: close
+	Content-Length: 2224
+	
+	<?xml version="1.0" encoding="utf-8"?>
+	<GoalState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="goalstate10.xsd">
+	  <Version>2012-11-30</Version>
+	  <Incarnation>1</Incarnation>
+	  <Machine>
+	    <ExpectedState>Started</ExpectedState>
+	    <StopRolesDeadlineHint>300000</StopRolesDeadlineHint>
+	    <LBProbePorts>
+	      <Port>16001</Port>
+	    </LBProbePorts>
+	    <ExpectHealthReport>FALSE</ExpectHealthReport>
+	  </Machine>
+	  <Container>
+	    <ContainerId>53011767-77ae-4b65-b198-2f2f03dae266</ContainerId>
+	    <RoleInstanceList>
+	      <RoleInstance>
+	        <InstanceId>f50e4b26-82ca-4d1e-bb16-7167849ca85d._EUS2-GCUS1U24J110J51-0073</InstanceId>
+	        <State>Started</State>
+	        <Configuration>
+	          <HostingEnvironmentConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=hostingEnvironmentConfig&amp;incarnation=1</HostingEnvironmentConfig>
+	          <SharedConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=sharedConfig&amp;incarnation=1</SharedConfig>
+	          <ExtensionsConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=extensionsConfig&amp;incarnation=1</ExtensionsConfig>
+	          <FullConfig>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=config&amp;type=fullConfig&amp;incarnation=1</FullConfig>
+	          <Certificates>http://168.63.129.16:80/machine/53011767-77ae-4b65-b198-2f2f03dae266/f50e4b26%2D82ca%2D4d1e%2Dbb16%2D7167849ca85d.%5FEUS2%2DGCUS1U24J110J51%2D0073?comp=certificates&amp;incarnation=1</Certificates>
+	          <ConfigName>f50e4b26-82ca-4d1e-bb16-7167849ca85d.1.f50e4b26-82ca-4d1e-bb16-7167849ca85d.1._EUS2-GCUS1U24J110J51-0073.1.xml</ConfigName>
+	        </Configuration>
+	      </RoleInstance>
+	    </RoleInstanceList>
+	  </Container>
+	</GoalState> [|http]
+01:01:36.301984 eth0  Out IP (tos 0x0, ttl 64, id 408, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648 > 168.63.129.16.http: Flags [.], cksum 0x3401 (incorrect -> 0x697b), ack 2390, win 538, options [nop,nop,TS val 1701596085 ecr 1978843041], length 0
+01:01:36.302158 eth0  Out IP (tos 0x0, ttl 64, id 409, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648 > 168.63.129.16.http: Flags [F.], cksum 0x3401 (incorrect -> 0x6979), seq 201, ack 2390, win 538, options [nop,nop,TS val 1701596086 ecr 1978843041], length 0
+01:01:36.302363 eth0  In  IP (tos 0x0, ttl 128, id 26046, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.http > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.45648: Flags [.], cksum 0x2b8f (correct), ack 202, win 16387, options [nop,nop,TS val 1978843042 ecr 1701596086], length 0
+01:01:36.302573 eth0  Out IP (tos 0x0, ttl 64, id 60869, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0x0f87), seq 1845271943, win 64240, options [mss 1460,sackOK,TS val 1701596086 ecr 0,nop,wscale 7], length 0
+01:01:36.302875 eth0  In  IP (tos 0x0, ttl 128, id 26047, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728: Flags [S.], cksum 0x1b81 (correct), seq 1863666234, ack 1845271944, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978843042 ecr 1701596086], length 0
+01:01:36.302889 eth0  Out IP (tos 0x0, ttl 64, id 60870, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0x4858), ack 1, win 502, options [nop,nop,TS val 1701596086 ecr 1978843042], length 0
+01:01:36.302929 eth0  Out IP (tos 0x0, ttl 64, id 60871, offset 0, flags [DF], proto TCP (6), length 507)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728 > 168.63.129.16.32526: Flags [P.], cksum 0x35c8 (incorrect -> 0xca9f), seq 1:456, ack 1, win 502, options [nop,nop,TS val 1701596086 ecr 1978843042], length 455
+01:01:36.306401 eth0  In  IP (tos 0x0, ttl 128, id 26048, offset 0, flags [DF], proto TCP (6), length 197)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728: Flags [FP.], cksum 0x0aa5 (correct), seq 1:146, ack 456, win 16386, options [nop,nop,TS val 1978843046 ecr 1701596086], length 145
+01:01:36.306533 eth0  Out IP (tos 0x0, ttl 64, id 60872, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0x45f7), seq 456, ack 147, win 501, options [nop,nop,TS val 1701596090 ecr 1978843046], length 0
+01:01:36.306612 eth0  In  IP (tos 0x0, ttl 128, id 26049, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52728: Flags [.], cksum 0x07ea (correct), ack 457, win 16386, options [nop,nop,TS val 1978843046 ecr 1701596090], length 0
+01:01:36.307110 eth0  Out IP (tos 0x0, ttl 64, id 17171, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0x49c5), seq 2090816671, win 64240, options [mss 1460,sackOK,TS val 1701596091 ecr 0,nop,wscale 7], length 0
+01:01:36.307421 eth0  In  IP (tos 0x0, ttl 128, id 26050, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730: Flags [S.], cksum 0xbd93 (correct), seq 1860821644, ack 2090816672, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978843047 ecr 1701596091], length 0
+01:01:36.307434 eth0  Out IP (tos 0x0, ttl 64, id 17172, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0xea6a), ack 1, win 502, options [nop,nop,TS val 1701596091 ecr 1978843047], length 0
+01:01:36.307454 eth0  Out IP (tos 0x0, ttl 64, id 17173, offset 0, flags [DF], proto TCP (6), length 454)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730 > 168.63.129.16.32526: Flags [P.], cksum 0x3593 (incorrect -> 0x79c3), seq 1:403, ack 1, win 502, options [nop,nop,TS val 1701596091 ecr 1978843047], length 402
+01:01:36.307464 eth0  Out IP (tos 0x0, ttl 64, id 17174, offset 0, flags [DF], proto TCP (6), length 642)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730 > 168.63.129.16.32526: Flags [P.], cksum 0x364f (incorrect -> 0x7c49), seq 403:993, ack 1, win 502, options [nop,nop,TS val 1701596091 ecr 1978843047], length 590
+01:01:36.307610 eth0  In  IP (tos 0x0, ttl 128, id 26051, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730: Flags [.], cksum 0xa880 (correct), ack 993, win 16384, options [nop,nop,TS val 1978843047 ecr 1701596091], length 0
+01:01:36.307947 eth0  In  IP (tos 0x0, ttl 128, id 26052, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730: Flags [FP.], cksum 0xb065 (correct), seq 1:155, ack 993, win 16384, options [nop,nop,TS val 1978843047 ecr 1701596091], length 154
+01:01:36.308224 eth0  Out IP (tos 0x0, ttl 64, id 31140, offset 0, flags [DF], proto TCP (6), length 60)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736 > 168.63.129.16.32526: Flags [S], cksum 0x3409 (incorrect -> 0xc062), seq 3397226524, win 64240, options [mss 1460,sackOK,TS val 1701596092 ecr 0,nop,wscale 7], length 0
+01:01:36.308407 eth0  In  IP (tos 0x0, ttl 128, id 26053, offset 0, flags [DF], proto TCP (6), length 60)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736: Flags [S.], cksum 0xb387 (correct), seq 1120505685, ack 3397226525, win 65535, options [mss 1460,nop,wscale 8,sackOK,TS val 1978843048 ecr 1701596092], length 0
+01:01:36.308418 eth0  Out IP (tos 0x0, ttl 64, id 31141, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736 > 168.63.129.16.32526: Flags [.], cksum 0x3401 (incorrect -> 0xe05e), ack 1, win 502, options [nop,nop,TS val 1701596092 ecr 1978843048], length 0
+01:01:36.308437 eth0  Out IP (tos 0x0, ttl 64, id 31142, offset 0, flags [DF], proto TCP (6), length 455)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736 > 168.63.129.16.32526: Flags [P.], cksum 0x3594 (incorrect -> 0x36b7), seq 1:404, ack 1, win 502, options [nop,nop,TS val 1701596092 ecr 1978843048], length 403
+01:01:36.308448 eth0  Out IP (tos 0x0, ttl 64, id 31143, offset 0, flags [DF], proto TCP (6), length 2711)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736 > 168.63.129.16.32526: Flags [P.], cksum 0x3e64 (incorrect -> 0x0c64), seq 404:3063, ack 1, win 502, options [nop,nop,TS val 1701596092 ecr 1978843048], length 2659
+01:01:36.308525 eth0  In  IP (tos 0x0, ttl 128, id 26054, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736: Flags [.], cksum 0x965a (correct), ack 3063, win 16388, options [nop,nop,TS val 1978843048 ecr 1701596092], length 0
+01:01:36.309062 eth0  In  IP (tos 0x0, ttl 128, id 26055, offset 0, flags [DF], proto TCP (6), length 206)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736: Flags [FP.], cksum 0x9e3e (correct), seq 1:155, ack 3063, win 16388, options [nop,nop,TS val 1978843049 ecr 1701596092], length 154
+01:01:36.309174 eth0  Out IP (tos 0x0, ttl 64, id 17175, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0xe5ed), seq 993, ack 156, win 501, options [nop,nop,TS val 1701596093 ecr 1978843047], length 0
+01:01:36.309193 eth0  Out IP (tos 0x0, ttl 64, id 31145, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736 > 168.63.129.16.32526: Flags [F.], cksum 0x3401 (incorrect -> 0xd3cb), seq 3063, ack 156, win 501, options [nop,nop,TS val 1701596093 ecr 1978843049], length 0
+01:01:36.309263 eth0  In  IP (tos 0x0, ttl 128, id 26056, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52730: Flags [.], cksum 0xa7e0 (correct), ack 994, win 16384, options [nop,nop,TS val 1978843049 ecr 1701596093], length 0
+01:01:36.309377 eth0  In  IP (tos 0x0, ttl 128, id 26057, offset 0, flags [DF], proto TCP (6), length 52)
+    168.63.129.16.32526 > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.52736: Flags [.], cksum 0x95bc (correct), ack 3064, win 16388, options [nop,nop,TS val 1978843049 ecr 1701596093], length 0
+01:01:38.938046 eth0  Out IP (tos 0x0, ttl 64, id 31471, offset 0, flags [DF], proto TCP (6), length 52)
+    fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.57372 > 13.107.246.41.https: Flags [.], cksum 0x0e46 (incorrect -> 0x812d), ack 3345, win 692, options [nop,nop,TS val 1650001589 ecr 4127171218], length 0
+01:01:38.938678 eth0  In  IP (tos 0x0, ttl 57, id 13132, offset 0, flags [DF], proto TCP (6), length 52)
+    13.107.246.41.https > fv-az1720-213.5vs45zvnpbiehoyyevf2d3pjfe.cx.internal.cloudapp.net.57372: Flags [.], cksum 0x838d (correct), ack 291, win 83, options [nop,nop,TS val 4127186374 ecr 1649986433], length 0
