@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.0.0
+MinimumVisualStudioVersion = 17.8.0.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfiniteCanvas.AppHost", "InfiniteCanvas.AppHost\InfiniteCanvas.AppHost.csproj", "{E114DD48-9F78-4CC5-A801-5BEE455DA6F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfiniteCanvas.ServiceDefaults", "InfiniteCanvas.ServiceDefaults\InfiniteCanvas.ServiceDefaults.csproj", "{FC41E6E9-08D0-4C2D-AA00-8B421D49F163}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E114DD48-9F78-4CC5-A801-5BEE455DA6F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E114DD48-9F78-4CC5-A801-5BEE455DA6F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E114DD48-9F78-4CC5-A801-5BEE455DA6F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E114DD48-9F78-4CC5-A801-5BEE455DA6F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC41E6E9-08D0-4C2D-AA00-8B421D49F163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC41E6E9-08D0-4C2D-AA00-8B421D49F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC41E6E9-08D0-4C2D-AA00-8B421D49F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC41E6E9-08D0-4C2D-AA00-8B421D49F163}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7277AE7-D3E4-4162-973E-524DE0C56405}
+	EndGlobalSection
+EndGlobal
